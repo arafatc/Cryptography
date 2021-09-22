@@ -8,17 +8,14 @@ based structure like bitcoin.
 
 ● Block.py: This class implements a basic Block including some mandatory attributes like
 previous block hash, index, creation timestamp, transactions, hash target, nonce, and the final
-block hash. The hash_block method generates a hash for the block including all relevant components. The
-primary methods are already implemented.
+block hash. The hash_block method generates a hash for the block including all relevant components. 
 ● Account.py: This class implements a blockchain account including some mandatory
 attributes like id, balance, nonce, and private/public keys encoded in pem format strings.
 The id is just a text string here, instead of a large hexadecimal address. Uniqueness is
-assumed but not enforced. It keeps a running balance of value, unlike bitcoin. A few
-supporting methods are already implemented.
+assumed but not enforced. It keeps a running balance of value, unlike bitcoin.
 ● Blockchain.py: This class implements a basic Blockchain including some mandatory
 attributes like the actual chain of blocks, pending transactions, known accounts, and the
-current target hash. Genesis block is automatically created during initialization. A few supporting methods are
-already implemented.
+current target hash. Genesis block is automatically created during initialization.
 ● main.py: This is the main driver program. It creates some accounts, a blockchain instance
 and blocks. It also triggers a full blockchain validation and prints the blockchain and the
 current account balances.
@@ -30,7 +27,7 @@ b. Completed the create_transaction method in Account class:
 i. Generated the private key object from the pem created in 1.a
 ii. Generated the hash of the transaction message
 iii. Digitally sign the hash with the private key
-iv. Handle formatting appropriately for hashing and signing inputs
+iv. Handled formatting appropriately for hashing and signing inputs
 v. Converted the signature from ‘bytes’ to an appropriate string
 based format. Base64 is an appropriate choice, base64 library is already
 imported.
